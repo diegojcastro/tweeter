@@ -6,6 +6,7 @@
   font-size: 18px;
   color: #545149;
   background-color: #f4f1ec;
+  margin-bottom: 1em;
 }
 
 .new-tweet h2 {
@@ -17,7 +18,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Source Sans Pro 600', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
   
 }
 
@@ -42,4 +44,19 @@ form div {
 form div button {
   background-color: #4056A1;
   color: white
+}
+
+.error {
+  background: #fff0f4; 
+  color: #c51244;
+  border: solid #c51244 
+}
+
+
+.error-message {
+  background: #c51244;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 5px;
+  margin-top: 0px;
 }

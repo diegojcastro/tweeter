@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -31,7 +33,7 @@
     <div class="wrapper">
       <nav>
         <span id="logo">tweeter</span>
-        <span id="write-new-area">
+        <span class="button" id="write-new-area">
           <div id="write-new-text"><b>Write</b> a new tweet</div>
           <i class="fas fa-angle-double-down"></i>
         </span>
@@ -50,17 +52,22 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section id="new-tweet" class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets/" method="POST">
+        <form id="new-tweet-form" action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
-            <button type="submit">Tweet</button>
+            <button class="button" type="submit">Tweet</button>
+            <div id="error-msg" class="error-message">Tweet must be 0-140 chars!</div>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
+      <section class="all-tweets" id="all-tweets">
+        
+      </section>
+      <i class="fas fa-chevron-circle-up button" id="scroll-up-button"></i>
     </main>
   </body>
 </html>
