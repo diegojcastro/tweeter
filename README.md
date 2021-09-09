@@ -19,9 +19,9 @@ Elements of note:
 4. Go to <http://localhost:8080/> in your browser.
 
 ## Screenshots
-!["Small screen layout showing tweet composer and old tweets list."]()
+!["Small screen layout showing tweet composer and old tweets list."](https://github.com/diegojcastro/tweeter/blob/master/docs/mobile-view.png?raw=true)
 
-!["Wide screen view."]()
+!["Wide screen view."](https://github.com/diegojcastro/tweeter/blob/master/docs/wide-view.png?raw=true)
 
 ## Dependencies
 
