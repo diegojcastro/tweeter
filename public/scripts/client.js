@@ -89,7 +89,9 @@ $(function() {
     const serializedText = $textArea.serialize();
     $textArea.val('');
 
-    $.post('/tweets/', serializedText).then(loadTweets());
+    $.post('/tweets/', serializedText).then(function() {
+      loadTweets();
+    });
     
   })
 

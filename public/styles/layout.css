@@ -26,11 +26,14 @@ body {
 
 main {
   width: 90%;
+  max-width: 800px;
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 120px;
 }
 
 .all-tweets {
@@ -51,3 +54,20 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ /* Responsive design below */
+
+@media (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main {
+    margin-top: 1em;
+  }
+
+  #user-profile {
+    width: 300px;
+  }
+}
