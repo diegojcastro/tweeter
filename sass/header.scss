@@ -2,7 +2,7 @@
 #user-profile {
   position: relative;
   z-index: -1;
-  top: 120px;
+  top: 100px;
   height: 400px;
   width: 100%;
   display: flex;
@@ -11,19 +11,27 @@
   align-items: center;
   background-color: sandybrown;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
-
+  
+  p {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+  }
 }
 
 
-h2 {
-  color: white
-}
 
 @media (min-width: 1024px) {
 
   #user-profile {
     width: 100%;
-    max-width: 400px;
+    min-width: 25vw;
+    max-width: 30vw;;
     margin: 2em 1em 1em 1em;
+
+    img {
+      padding-top: 25px;
+    }
   }
 }

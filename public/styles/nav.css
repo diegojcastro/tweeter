@@ -6,14 +6,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  position:fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
 }
-
 nav span {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   padding: 1.5em;
 }
 
@@ -21,9 +20,8 @@ i {
   color: red;
 }
 
-
 #logo {
-  font-size: 1.0em;
+  font-size: 1em;
 }
 
 #write-new-area {

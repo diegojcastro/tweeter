@@ -7,13 +7,8 @@ article.tweet {
   color: #545149;
   border: solid #545149;
   margin-top: 1em;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
-
-article.tweet:hover {
-  box-shadow: 3px 3px;
-}
-
 article.tweet header {
   display: flex;
   width: 90%;
@@ -21,39 +16,32 @@ article.tweet header {
   justify-content: space-between;
   margin-top: 1em;
 }
-
 article.tweet header div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 article.tweet .avatar {
   height: 75%;
   margin-right: 1em;
 }
-
 article.tweet .display-name {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
-
 article.tweet .handle {
   color: #c5cbe3;
   font-weight: 600;
 }
-
 article.tweet p {
   width: 90%;
   padding-bottom: 1em;
   font-size: 20px;
 }
-
 article.tweet .separator {
   width: 95%;
   border-bottom: solid;
   align-self: center;
 }
-
 article.tweet footer {
   font-size: 80%;
   display: flex;
@@ -61,13 +49,16 @@ article.tweet footer {
   align-items: center;
   width: 90%;
 }
-
 article.tweet footer .icons {
   display: flex;
   justify-content: center;
   flex-direction: row;
   margin-top: 1em;
   margin-bottom: 2em;
+}
+
+article.tweet:hover {
+  box-shadow: 3px 3px;
 }
 
 .icons i {
