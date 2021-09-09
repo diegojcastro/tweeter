@@ -1,0 +1,29 @@
+
+#user-profile {
+  position: relative;
+  z-index: -1;
+  top: 120px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: sandybrown;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+
+}
+
+
+h2 {
+  color: white
+}
+
+@media (min-width: 1024px) {
+
+  #user-profile {
+    width: 100%;
+    max-width: 400px;
+    margin: 2em 1em 1em 1em;
+  }
+}
