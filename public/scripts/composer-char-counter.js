@@ -14,7 +14,6 @@ $(document).ready(function() {
       counter.css('color', '');
       textArea.removeClass('error');
       $('#error-msg').hide();
-
     }
   })
 });
