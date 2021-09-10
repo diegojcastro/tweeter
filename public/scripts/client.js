@@ -90,6 +90,7 @@ $(function() {
     $textArea.val('');
 
     $.post('/tweets/', serializedText).then(function() {
+      $('#new-tweet-form').find('.counter').val(140);
       loadTweets();
     });
     
